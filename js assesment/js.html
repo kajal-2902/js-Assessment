@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="js.css">
+</head>
+
+<body>
+
+    <center>
+        <div class="main">
+
+
+            <form action="" name="myform" onsubmit="return validity_form(this)">
+            <h1> Restaurants Booking</h1>
+
+                <table cellspacing="20px" cellpadding="4px">
+                    <tr>
+                        <td>
+                            <label for="bookingType">Choice of Booking  </label>
+
+                        </td>
+                        <td>
+                            <select name="booking" required class="booked" id="bookingType" onclick="formee()">
+                                <option value="fullDay">Full day booking</option>
+                                <option value="halfDay">Half day booking</option>
+                                <option value="Hourlyday">Hourly day booking</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="username">User Name : </label>
+                        </td>
+                        <td>
+                            <input type="text"  id="username" name="uname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="MobileNumber">Mobile Number : </label>
+                        </td>
+                        <td>
+                            <input type="text" maxlength="10"  id="MobileNumber" name="phonenumber">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Email">Email : </label>
+                        </td>
+                        <td>
+                            <input type="email"  id="Email" name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Noofperson">Number of person : </label>
+                        </td>
+                        <td>
+                            <input type="number"  id="Noofperson" name="person">
+                        </td>
+                    </tr>
+                    <tr>
+                       <div id="date">
+                        <td>
+                            <label for="Date">Date : </label>
+                        </td>
+                        <td>
+                            <input type="date"  id="Date" name="dob">
+                        </td>
+                       </div>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <div id="time">
+                                <label for="time" class="timee"  >Time : </label>
+                                <input type="time"   id="time">
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div id="slot">
+                                <label for="slot" class="timee">Slot : </label>
+
+
+                                <select id="slot" class="booked"  >
+                                    <option value="lunch">Breakfast</option>
+                                    <option value="dinner">Lunch</option>
+                                    <option value="breakfast">Dinner</option>
+                                </select>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>SUBMIT</button>
+                        </td>
+                        <td id="demo1">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+    <script src="js.js"></script>
+</body>
+
+</html>
+```
